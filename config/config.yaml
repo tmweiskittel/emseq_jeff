@@ -51,7 +51,7 @@ emseq_ref_assemblies:
 # -----------------------------
 meth-map:
   test:
-    libs: [f"P"{num}" for num in list(range(1, 34))] + ["C35"] + [f"C{num}" for num in list(range(36, 70))]
+    libs: [f"P{num}" for num in list(range(1, 34))] + ["C35"] + [f"C{num}" for num in list(range(36, 70))]
     emseq_ref_name: ["hg38"]
     align_method: ["bwa_meth"]
     tx: [0*34+1*34]
